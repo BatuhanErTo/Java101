@@ -1,3 +1,5 @@
+package Java101;
+
 import java.awt.*;
 import java.util.Scanner;
 public class Homework2 {

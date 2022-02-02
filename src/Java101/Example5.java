@@ -1,3 +1,5 @@
+package Java101;
+
 import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 public class Example5 {

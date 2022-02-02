@@ -1,3 +1,5 @@
+package Java101;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Example3 {
