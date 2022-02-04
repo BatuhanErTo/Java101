@@ -1,7 +1,9 @@
 package Java101;
+import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Scanner;
 public class Example22 {
     public static void main(String[] args) {
+        System.out.println("Welcome");
         Scanner inp = new Scanner(System.in);
         System.out.println("Enter the n1 : ");
         int n1 = inp.nextInt();
