@@ -14,6 +14,5 @@ public class Homework10 {
             n2 = sum;
             i++;
         }
-
     }
 }
