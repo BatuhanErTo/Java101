@@ -12,41 +12,31 @@ public class Ring {
         this.minWeight = minWeight;
         this.maxWeight = maxWeight;
     }
-    public boolean whoFirst(){
-        double randomValue = Math.random() * 100;
-        if (randomValue<=50.0){
-            return true;
-        }else {
-            return false;
-        }
-    }
-
     public void run() {
         if (checkWeight()) {
             while (f1.health > 0 && f2.health > 0) {
-              if (whoFirst()){
-                  System.out.println("======== İKİNCİ İLK VURAN ===========");
-                  f2.health = f1.hit(f2);
-                  if (isWin()){
-                      break;
-                  }
-                  f1.health = f2.hit(f1);
-                  if (isWin()){
-                      break;
-                  }
-                  printScore();
-              }else {
-                  System.out.println("======== BİRİNCİ İLK VURAN ===========");
-                  f1.health = f2.hit(f1);
-                  if (isWin()){
-                      break;
-                  }
-                  f1.health = f1.hit(f2);
-                  if (isWin()){
-                      break;
-                  }
-                  printScore();
-              }
+                System.out.println("========= NEW ROUND =============");
+                if (Math.random()<=0.5){
+                    f2.health = f1.hit(f2);
+                    if (isWin()){
+                        break;
+                    }
+                    f1.health = f2.hit(f1);
+                    if (isWin()){
+                        break;
+                    }
+                    printScore();
+                }else {
+                    f1.health = f2.hit(f1);
+                    if (isWin()){
+                        break;
+                    }
+                    f1.health = f1.hit(f2);
+                    if (isWin()){
+                        break;
+                    }
+                    printScore();
+                }
               }
             }
         else {
