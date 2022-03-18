@@ -1,4 +1,4 @@
-# My Java Path
+# Java101
 ## Projects
 - **Java101**
 - **BoxMatch**
